@@ -515,7 +515,7 @@
             var timeout = parseInt(document.getElementById('timeout').value, 10) || 0;
             var headers = collectHeaders();
 
-            // 根据当前激活的 tab 读取数据
+            // 根据当��激活的 tab 读取数据
             var parsedData;
             var activeTab = document.querySelector('.tab-btn.active');
             if (activeTab && activeTab.dataset.mode === 'kv') {
@@ -670,5 +670,11 @@
             }
         })();
     </script>
+
+    <!-- Vercel Speed Insights -->
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
